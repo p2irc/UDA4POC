@@ -21,7 +21,7 @@ The annotated dataset in this repository is based on Global Wheat Dataset (GWD) 
 
 
 
-@article{david2020global,
+@misc{david2020global,
   title={Global Wheat Head Detection (GWHD) dataset: a large and diverse dataset of high resolution RGB labelled images to develop and benchmark wheat head detection methods},
   author={David, Etienne and Madec, Simon and Sadeghi-Tehran, Pouria and Aasen, Helge and Zheng, Bangyou and Liu, Shouyang and Kirchgessner, Norbert and Ishikawa, Goro and Nagasawa, Koichi and Badhon, Minhajul Arifin and others},
   journal={arXiv preprint arXiv:2005.02162},
