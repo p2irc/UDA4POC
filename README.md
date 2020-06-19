@@ -13,9 +13,15 @@ Our model is fully implemented using the Pytorch framework. The model was traine
 were resized to 256×256 pixels. 
 
 
+## How to use?
+To train the UDA4POC model
+
+	python train.py -s <source domain pickle path> -t <target domain pickle path> -e <number of epochs> -o <output weight path>
 
 
-### Wheat Spikelet Dataset
+## Citing
+
+#### Wheat Spikelet Dataset
 
 The annotated dataset in this repository is based on Global Wheat Dataset (GWD) [[2]](#2). GWD is a dataset presented in the Kaggle wheat head detection competition. The dataset comes with bounding box annotations for each wheat head. We took 67 images from the GWD dataset and made dot annotations for spikelets. If you used this dataset, please cite the following works
 
