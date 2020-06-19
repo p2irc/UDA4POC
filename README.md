@@ -1,6 +1,6 @@
 # Unsupervised Domain Adaptation For Plant Organ Counting (UDA4POC)
 
-This repository contains codes written for a paper we published on CVPPP 2020 and an opensource Wheat Spikelet Dataset in an infield setting. 
+This repository contains codes written for a paper we published on ECCV 2020 Workshop on COMPUTER VISION PROBLEMS IN PLANT PHENOTYPING (CVPPP 2020). Additionally, the repository contains an opensource outdoor Wheat Spikelet annotation dataset.
 
 Paper: 
 
@@ -18,6 +18,8 @@ To train the UDA4POC model
 
 	python train.py -s <source domain pickle path> -t <target domain pickle path> -e <number of epochs> -o <output weight path>
 
+-s: source domain python pickled dictionary where keys represent source image names, and the value for each key is a list of the $256x256$ image and its corresponding density map.
+-t: target domain python pickled dictionary where keys represent target image names, and the value for each key is a  $256x256$ image 
 
 ## Citing
 
