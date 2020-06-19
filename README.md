@@ -4,13 +4,15 @@ This repository contains codes written for a paper we published on ECCV 2020 Wor
 
 Paper: 
 
-we used a Domain-Adversarial Neural Network (DANN)[[1]](#1). We customized the network proposed in [[1]](#1) by replacing the main classification network
+We used a Domain-Adversarial Neural Network (DANN)[[1]](#1). We customized the network proposed in [[1]](#1) by replacing the main classification network
 with a U-Net network that is used for density map estimation
 
 ![Architecture](UNet-DA.png)
 
-Our model is fully implemented using the Pytorch framework. The model was trained with a batch size of 8. The input images in the training set
-were resized to 256×256 pixels. 
+
+
+## Training
+Our model is fully implemented using the Pytorch framework. The model was trained with a batch size of 8. The input images in the training set were resized to _256×256_ pixels. We used the Adam optimizer with tuned learning rates for each subnetwork. We used a learning rate of _10^−3_ for the downsampling and upsampling subnetworks, and _10^−4_ for the domain classifier.
 
 
 ## How to use?
@@ -18,8 +20,10 @@ To train the UDA4POC model
 
 	python train.py -s <source domain pickle path> -t <target domain pickle path> -e <number of epochs> -o <output weight path>
 
--s: source domain python pickled dictionary where keys represent source image names, and the value for each key is a list of the $256x256$ image and its corresponding density map.  
--t: target domain python pickled dictionary where keys represent target image names, and the value for each key is a  $256x256$ image   
+-s: source domain python pickled dictionary where keys represent source image names, and the value for each key is a list of the _256x256_ image and its corresponding density map.  
+-t: target domain python pickled dictionary where keys represent target image names, and the value for each key is a  _256x256_ image  
+-e: number of epochs to train the model
+-o: path to save the weight after trianing the model
 
 ## Citing
 
