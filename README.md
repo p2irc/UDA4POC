@@ -18,8 +18,8 @@ To train the UDA4POC model
 
 	python train.py -s <source domain pickle path> -t <target domain pickle path> -e <number of epochs> -o <output weight path>
 
--s: source domain python pickled dictionary where keys represent source image names, and the value for each key is a list of the $256x256$ image and its corresponding density map.
--t: target domain python pickled dictionary where keys represent target image names, and the value for each key is a  $256x256$ image 
+-s: source domain python pickled dictionary where keys represent source image names, and the value for each key is a list of the $256x256$ image and its corresponding density map.  
+-t: target domain python pickled dictionary where keys represent target image names, and the value for each key is a  $256x256$ image   
 
 ## Citing
 
