@@ -14,12 +14,15 @@ with a U-Net network that is used for density map estimation
 Our model is fully implemented using the Pytorch framework. The model was trained with a batch size of 8. The input images in the training set were resized to _256×256_ pixels. In the repositiory we've included weights stored from our experiments presented in our paper.
 
 ### Sample training 
-Here, we show the in-training predictions for our Domain adapation in leaf counting experiment where CVPPP 2017 LCC Dataset is used as a source domain and KOMATSUNA Dataset is a target domain. We use the leaf center annotations and generated the groudtruth density map by filtering the center points with a 2D gaussian filter with σ = 3.
+Here, we show our Domain adapation in leaf counting experiment where CVPPP 2017 LCC Dataset is used as a source domain and KOMATSUNA Dataset is a target domain. We use the leaf center annotations from the source domain and generated the groudtruth density map by filtering the center points with a 2D gaussian filter with σ = 3.
 
 ![Leaf counting](Images/sample_image.png)
 *Example images for leaf counting experiments: (Top) Source dataset: Arabidopsis, CVPPP Dataset, (Bottom) Target dataset: KOMATSUNA Dataset*
 
+For this experiment, we randomly selected 80% of the images from the CVPPP dataset and merged them with the images from the KOMATSUNA dataset. The remaining 20% of the source domain is used for validation. With this setting, we trained our model for 150 epochs. The figure below shows the prediction of our model vs a vanilla U-Net based baseline model.
 
+![DA leaf counting sample output](Images/sample_image.png)
+*Sample density map estimations from the adapted model in the leaf counting task*
 
 ## How to use?
 To train the UDA4POC model
