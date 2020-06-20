@@ -7,12 +7,18 @@ Paper:
 We used a Domain-Adversarial Neural Network (DANN)[[1]](#1). We customized the network proposed in [[1]](#1) by replacing the main classification network
 with a U-Net network that is used for density map estimation
 
-![Architecture](UNet-DA.png)
-
-
+![Architecture](Images/UNet-DA.png)
+*The proposed Domain-Adversarial Neural Network composed of two networks that share weights between Conv1 and Conv8. The downsampling subnetwork, the upsampling subnetwork, and the domain classifier are denoted by the blue, red, and green boxes respectively. The red arrow shows the Gradient Reversal Layer*
 
 ## Training
-Our model is fully implemented using the Pytorch framework. The model was trained with a batch size of 8. The input images in the training set were resized to _256×256_ pixels. We used the Adam optimizer with tuned learning rates for each subnetwork. We used a learning rate of _10^−3_ for the downsampling and upsampling subnetworks, and _10^−4_ for the domain classifier.
+Our model is fully implemented using the Pytorch framework. The model was trained with a batch size of 8. The input images in the training set were resized to _256×256_ pixels. In the repositiory we've included weights stored from our experiments presented in our paper.
+
+### Sample training 
+Here, we show the in-training predictions for our Domain adapation in leaf counting experiment where CVPPP 2017 LCC Dataset is used as a source domain and KOMATSUNA Dataset is a target domain.
+
+![Leaf counting](Images/sample_image.png)
+*Example images for leaf counting experiments: (Top) Source dataset: Arabidopsis, CVPPP Dataset, (Bottom) Target dataset 1: KOMATSUNA Dataset*
+
 
 
 ## How to use?
