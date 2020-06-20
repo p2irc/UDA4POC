@@ -14,10 +14,10 @@ with a U-Net network that is used for density map estimation
 Our model is fully implemented using the Pytorch framework. The model was trained with a batch size of 8. The input images in the training set were resized to _256×256_ pixels. In the repositiory we've included weights stored from our experiments presented in our paper.
 
 ### Sample training 
-Here, we show the in-training predictions for our Domain adapation in leaf counting experiment where CVPPP 2017 LCC Dataset is used as a source domain and KOMATSUNA Dataset is a target domain.
+Here, we show the in-training predictions for our Domain adapation in leaf counting experiment where CVPPP 2017 LCC Dataset is used as a source domain and KOMATSUNA Dataset is a target domain. We use the leaf center annotations and generated the groudtruth density map by filtering the center points with a 2D gaussian filter with σ = 3.
 
 ![Leaf counting](Images/sample_image.png)
-*Example images for leaf counting experiments: (Top) Source dataset: Arabidopsis, CVPPP Dataset, (Bottom) Target dataset 1: KOMATSUNA Dataset*
+*Example images for leaf counting experiments: (Top) Source dataset: Arabidopsis, CVPPP Dataset, (Bottom) Target dataset: KOMATSUNA Dataset*
 
 
 
