@@ -27,12 +27,13 @@ For this experiment, we randomly selected 80% of the images from the CVPPP datas
 ## How to use?
 To train the UDA4POC model
 
-	python train.py -s <source domain pickle path> -t <target domain pickle path> -e <number of epochs> -o <output weight path>
+	python train.py -s <source domain pickle path> -t <target domain pickle path> -e <number of epochs> -o <output weight path> -w <pre-trained weight path>
 
 -s: source domain python pickled dictionary where keys represent source image names, and the value for each key is a list of the _256x256_ image and its corresponding density map.  
 -t: target domain python pickled dictionary where keys represent target image names, and the value for each key is a  _256x256_ image  
 -e: number of epochs to train the model  
--o: path to save the weight after trianing the model
+-o: path to save the weight after trianing the model  
+-w: (optional parameter) pre-trained weight path
 
 ## Citing
 
