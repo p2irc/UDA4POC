@@ -24,7 +24,7 @@ For this experiment, we randomly selected 80% of the images from the CVPPP datas
 ![In training input](Images/input.png)
 ![In training predictions](Images/baseline.gif)
 ![In training predictions](Images/adapted.gif)
-*In-training predictions of baseline and our Domain Adaptation method*
+*In-training predictions of baseline and our Domain Adaptation method (Top) Input image (Middle) predictions from baseline (Bottom) predictions from our model*
 
 ![DA leaf counting sample output](Images/sample_output.png)
 *Sample density map estimations from the adapted model in the leaf counting task. From left to right: Input image, baseline prediciton, our model's prediction*
