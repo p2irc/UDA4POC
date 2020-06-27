@@ -19,12 +19,14 @@ Here, we show our Domain adapation in leaf counting experiment where CVPPP 2017 
 ![Leaf counting](Images/sample_image.png)
 *Example images for leaf counting experiments: (Top) Source dataset: Arabidopsis, CVPPP Dataset, (Bottom) Target dataset: KOMATSUNA Dataset*
 
-For this experiment, we randomly selected 80% of the images from the CVPPP dataset and merged them with the images from the KOMATSUNA dataset. The remaining 20% of the source domain is used for validation. With this setting, we trained our model for 150 epochs. The figure below shows the prediction of our model vs a vanilla U-Net based baseline model.
+For this experiment, we randomly selected 80% of the images from the CVPPP dataset and merged them with the images from the KOMATSUNA dataset. The remaining 20% of the source domain is used for validation. With this setting, we trained our model for 150 epochs. The in-training predictions of our model compared to a vanilla U-Net baseline model is shown in the figure below.
 
 ![In training input](Images/input.png)
 ![In training predictions](Images/baseline.gif)
 ![In training predictions](Images/adapted.gif)
 *In-training predictions of baseline and our Domain Adaptation method (Top) Input image (Middle) predictions from baseline (Bottom) predictions from our model*
+
+The figure below shows the prediction of our model vs the baseline model.
 
 ![DA leaf counting sample output](Images/sample_output.png)
 *Sample density map estimations from the adapted model in the leaf counting task. From left to right: Input image, baseline prediciton, our model's prediction*
