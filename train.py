@@ -97,8 +97,6 @@ valid_loss = []
 cost_1z = []
 cost_2z = []
 
-with open('imgz_for_plot.pkl','rb') as fp:
-	prv_x = pickle.load(fp)
 
 
 ctr=0

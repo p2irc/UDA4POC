@@ -73,9 +73,6 @@ learning_rate = 1e-3
 optimizer = optim.Adam(baseline_model.parameters(),lr=learning_rate)
 
 
-with open('imgz_for_plot.pkl','rb') as fp:
-	prv_x = pickle.load(fp)
-
 train_loss = []
 valid_loss = []
 
