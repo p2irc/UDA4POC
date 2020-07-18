@@ -56,6 +56,14 @@ The annotated dataset in this repository is based on Global Wheat Dataset (GWD) 
 	  year={2020}
 	}
 
+	@article{Ayalew2020,
+	author = "Tewodros Ayalew and Jordan Ubbens and Ian Stavness",
+	title = "{Global Wheat Dataset University of Saskatchewan Spikelet Annotation}",
+	year = "2020",
+	month = "7",
+	url = "https://figshare.com/articles/dataset/Global_Wheat_Dataset_University_of_Saskatchewan_Spikelet_Annotation/12652973",
+	doi = "10.6084/m9.figshare.12652973.v2"
+	}
 
 
 ## References
