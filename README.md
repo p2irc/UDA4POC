@@ -46,7 +46,9 @@ To train the UDA4POC model
 
 #### Wheat Spikelet Dataset
 
-The annotated dataset in this repository is based on Global Wheat Dataset (GWD) [[2]](#2). GWD is a dataset presented in the Kaggle wheat head detection competition. The dataset comes with bounding box annotations for each wheat head. We took 67 images from the GWD dataset and made dot annotations for spikelets. If you used this dataset, please cite the following works
+The annotated dataset linked in this repository is based on Global Wheat Dataset (GWD) [[2]](#2). GWD is a subset of the dataset presented in the Kaggle wheat head detection competition. The dataset comes with bounding box annotations for each wheat head. We took 67 images from the GWD dataset and made dot annotations for spikelets. 
+The dataset can be found at https://doi.org/10.6084/m9.figshare.12652973.v3
+If you used this dataset, please cite the following works
 
 	@inproceedings{ayalew2020unsupervised,
 	  author={Tewodros W. Ayalew, Jordan R. Ubbens, and Ian Stavness},
