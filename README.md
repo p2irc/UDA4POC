@@ -52,7 +52,7 @@ The dataset can be found at https://doi.org/10.6084/m9.figshare.12652973.v3
 If you use this dataset, please cite the following works
 
 	@inproceedings{ayalew2020unsupervised,
-	  author={Tewodros W. Ayalew, Jordan R. Ubbens, and Ian Stavness},
+	  author={Ayalew, Tewodros and Ubbens, Jordan and Stavness, Ian},
 	  title = {Unsupervised Domain Adaptation For Plant Organ Counting},
 	  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
 	  month = {August},
@@ -67,7 +67,7 @@ If you use this dataset, please cite the following works
 	}
 
 	@article{Ayalew2020,
-	  author = "Tewodros Ayalew and Jordan Ubbens and Ian Stavness",
+	  author = {Ayalew, Tewodros and Ubbens, Jordan and Stavness, Ian},
 	  title = "{Global Wheat Dataset USask_1 subset Spikelet Annotation}",
 	  year = "2020",
 	  month = "7",
