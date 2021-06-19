@@ -191,7 +191,7 @@ class CountEstimate(nn.Module):
     def forward(self,x,grl_lambda=1):
         x2,x5,x8,x11 = self.downsample(x)
         x2 = self.upsample(x11,x2,x5,x8)
-        x3 = self.adapt(x11)
+        x3 = self.adapt(x11,grl_lambda)
         
         return x2,x3
        
