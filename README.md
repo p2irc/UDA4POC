@@ -52,11 +52,12 @@ The dataset can be found at https://doi.org/10.6084/m9.figshare.12652973.v3
 If you use this dataset, please cite the following works
 
 	@inproceedings{ayalew2020unsupervised,
-	  author={Ayalew, Tewodros and Ubbens, Jordan and Stavness, Ian},
-	  title = {Unsupervised Domain Adaptation For Plant Organ Counting},
-	  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
-	  month = {August},
-	  year = {2020}
+	  title={Unsupervised Domain Adaptation for Plant Organ Counting},
+	  author={Ayalew, Tewodros W and Ubbens, Jordan R and Stavness, Ian},
+	  booktitle={European Conference on Computer Vision},
+	  pages={330--346},
+	  year={2020},
+	  organization={Springer}
 	}
 
 	@article{david2020global,
